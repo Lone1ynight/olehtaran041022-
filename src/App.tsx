@@ -84,7 +84,7 @@ function App() {
 
   return (
       <>
-      <header style={{background: `url(${numbers.number1})`, width: '100%', height: '200px'}} />
+      <header style={{background: `url(${numbers.number1})`, width: '100%', height: '200px', position: 'sticky'}} />
         <main style={
             {
                 display: 'flex',
@@ -94,9 +94,8 @@ function App() {
                 height: '500px'
             }
         }>
-            <div style={{background: `url(${numbers.number2})`, width: '25%', height: '100%'}}>
+            <div style={{background: `url(${numbers.number2})`, width: '25%', height: '100%'}} />
 
-            </div>
             <div style={
                 {
                     background: `url(${numbers.number3})`, width: '50%', height: '100%',
@@ -105,15 +104,12 @@ function App() {
                     justifyContent: 'center',
                 }
             }>
-                <button onClick={() => getRandomPictures(0,5)} style={{background: `${color}`}}>КРУТИТЬ БАРАБАН</button>
+                <button id="button" onClick={() => getRandomPictures(0,5)} style={{background: `${color}`}}>КРУТИТЬ БАРАБАН</button>
             </div >
-            <div style={{background: `url(${numbers.number4})`, width: '25%', height: '100%'}}>
-
-            </div>
-
+            <div style={{background: `url(${numbers.number4})`, width: '25%', height: '100%'}} />
         </main>
 
-        <footer style={{background: `url(${numbers.number5})`, width: '100%', height: '200px'}}></footer>
+        <footer style={{background: `url(${numbers.number5})`, width: '100%', height: '200px', position: 'sticky'}} />
 
       </>
   );
